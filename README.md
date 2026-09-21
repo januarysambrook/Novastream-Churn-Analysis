@@ -93,6 +93,22 @@ are built in the model rather than in visuals, so every chart cuts the data the 
 
 The source dataset is course material and is not redistributed here.
 
+## Assessment
+
+Submitted as a course capstone and assessed at **Distinction, 89 / 100**. Every headline
+figure was independently recomputed by the assessor and verified within tolerance:
+overall churn 23.90% against 23.82%, average monthly charge and average tenure both
+exact, and every segment rate matching.
+
+Two cleaning decisions were singled out as strengths rather than deviations. The five
+impossible outlier cells were nulled while keeping their rows, and the nine orphan
+foreign keys were routed to an explicit Unknown member rather than deleted, so those
+customers stay visible and labelled instead of disappearing into a blank. The assessor
+noted this is arguably better than removing them.
+
+The marks lost were evidential rather than analytical: a Power Query Applied Steps
+screenshot, a standalone churn-by-plan visual, and a named Total MRR measure.
+
 ---
 
 Built by January Sambrook
